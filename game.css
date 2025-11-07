@@ -1,0 +1,64 @@
+:root{
+  --bg1: #01011a;
+  --bg2: #0b2556;
+  --accent: #ffd166;
+  --panel: rgba(0,0,0,0.4);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:12px;
+  padding:20px;
+  color:#fff;
+}
+
+.ui{
+  width:800px;
+  max-width:95%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:6px;
+  gap:12px;
+}
+
+.info{
+  background:var(--panel);
+  padding:8px 12px;
+  border-radius:8px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  font-weight:600;
+}
+
+.controls button{
+  background:var(--accent);
+  color:#062;
+  border:0;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+canvas{
+  width:800px;
+  max-width:95%;
+  height:600px;
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(255,255,255,0.03), transparent 10%),
+    radial-gradient(ellipse at 80% 60%, rgba(255,255,255,0.02), transparent 10%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), transparent 30%),
+    rgba(0,0,0,0.1);
+  border-radius:12px;
+  display:block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
